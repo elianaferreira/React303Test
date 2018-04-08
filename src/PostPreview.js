@@ -18,7 +18,6 @@ const PostPreview = props => (
     </section>
     <div className='divider'/>
   </React.Fragment>
+);
 
-)
-
-export default PostPreview
+export default PostPreview;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import './App.css';
 import ErrorBoundary from './ErrorBoundary';
 import ListPager from './ListPager';
 import Post from './Post';

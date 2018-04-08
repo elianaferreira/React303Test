@@ -5,8 +5,8 @@ import PostPreview from './PostPreview';
 
 class ListPager extends React.Component {
   constructor () {
-    super()
-    this.state = { posts: [], loaded: false, error: null }
+    super();
+    this.state = { posts: [], loaded: false, error: null };
   }
 
   componentDidMount () {
@@ -17,7 +17,7 @@ class ListPager extends React.Component {
       })
       .catch(() => {
         this.setState({ loaded: true, error: true });
-      })
+      });
   }
 
   render () {
@@ -29,8 +29,8 @@ class ListPager extends React.Component {
         {this.state.loaded && this.state.posts.posts.map(p => <PostPreview key={p.id} post={p} />)}
         {!this.state.loaded && <p>Loading...</p>}
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default ListPager
+export default ListPager;
