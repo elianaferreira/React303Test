@@ -26,3 +26,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin: 10em;
+}
