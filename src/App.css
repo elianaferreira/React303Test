@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
 }
 
 .App-logo {
@@ -32,4 +40,39 @@
   background-color: #f44336;
   color: white;
   margin: 10em;
+}
+
+.page {
+  display: grid;
+  width: 70%;
+  padding: 10px;
+  grid-template-areas: "media head head"
+                       "media excerpt  excerpt";
+  grid-template-columns: 30% 35% 35%;
+  background: #fff;
+}
+
+.header {
+  grid-area: head;
+  color: #65CCB8;
+}
+
+.media {
+  grid-area: media;
+  width: 50%;
+  align-self: center;
+  border-radius: 0.25em;
+}
+
+.main {
+  grid-area: excerpt;
+  text-align: justify;
+  color: #182628;
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  align-self: center;
+  background-color: #A4A4A4; 
 }
